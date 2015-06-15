@@ -1,0 +1,17 @@
+<div>
+  <div class="question">
+    <span>{{cache.active_modal.question}}</span>
+  </div>
+  <ul class="list-inline">
+    <li>
+      <button class="button button-stable" ng-click="cache.active_modal.cancel.callback();" data-dismiss="modal">
+        <span>{{cache.active_modal.cancel.label}}</span>
+      </button>
+    </li>
+    <li>
+      <button class="button button-royal" ng-click="cache.active_modal.success.callback();" data-dismiss="modal">
+        <span>{{cache.active_modal.success.label}}</span>
+      </button>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,17 @@
+  <ion-view view-title="Home">
+    <ion-content>
+      HOME
+      <ion-list>
+        <ion-item class="item-remove-animate item-avatar item-icon-right" ng-class-even="'energized'" ng-repeat="match in constants.chats.collection" type="item-text-wrap" ng-click="Confirm(match)">
+          {{match.name}}
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item class="item-remove-animate item-avatar item-icon-right" ng-class-even="'balanced'" ng-repeat="chat in constants.chats.collection" type="item-text-wrap" href="#/defensive/{{chat.id}}">
+          {{chat.name}}
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-view>

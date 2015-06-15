@@ -1,0 +1,25 @@
+/* Empty. Add your own CSS if you like */
+$purple: #69639f;
+body{
+  background-color: $purple;
+}
+
+.pane, .view{
+  background-color: $purple;
+}
+
+.modal{
+  width: 100%;
+  background-color: transparent;
+}
+
+.confirmation{
+  text-align: center;
+  .modal-header{
+    text-align: right;
+  }
+  .question{
+    font-size: 22px;
+    padding: 15px;
+  }
+}
