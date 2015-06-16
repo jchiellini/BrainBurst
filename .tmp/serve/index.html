@@ -11,13 +11,14 @@
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
     <link rel="stylesheet" href="vendor.css">
     <!-- bower:css -->
-    <!-- run `gulp wiredep` to automaticaly populate bower styles dependencies -->
+    <link rel="stylesheet" href="../bower_components/ionic/css/ionic.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css({.tmp/serve,src}) styles/app.css -->
     <!-- inject:css -->
-    <!-- css files will be automaticaly insert here -->
+    <link rel="stylesheet" href="index.css">
     <!-- endinject -->
     <!-- endbuild -->
 
@@ -64,13 +65,33 @@
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->
-    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../bower_components/ionic/js/ionic.js"></script>
+    <script src="../bower_components/ionic/js/ionic-angular.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
     <!-- inject:js -->
-    <!-- js files will be automatically insert here -->
+    <script src="scripts/app.js"></script>
+    <script src=".tmp/partials/templateCacheHtmlScripts.js"></script>
+    <script src="scripts/services/constants-svc.js"></script>
+    <script src="scripts/services/cache-svc.js"></script>
+    <script src="scripts/services/admob-svc.js"></script>
+    <script src="scripts/controllers/parent-ctrl.js"></script>
+    <script src="scripts/controllers/offensive-ctrl.js"></script>
+    <script src="scripts/controllers/match-ctrl.js"></script>
+    <script src="scripts/controllers/home-ctrl.js"></script>
+    <script src="scripts/controllers/defensive-ctrl.js"></script>
+    <script src="scripts/controllers/dash-ctrl.js"></script>
+    <script src="scripts/controllers/chats-ctrl.js"></script>
+    <script src="scripts/controllers/chat_detail-ctrl.js"></script>
+    <script src="scripts/controllers/account-ctrl.js"></script>
     <!-- endinject -->
 
     <!-- inject:partials -->

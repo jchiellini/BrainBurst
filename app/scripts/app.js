@@ -53,5 +53,14 @@ angular.module('app', ['ionic'])
       .otherwise('/');
 
   })
-  .run(function(){
+  .run(function($ionicPlatform, admob){
+
+    $ionicPlatform.ready(function() {
+      if(( /(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent) )) {
+        document.addEventListener('deviceready', admob.initAd, false);
+      } else {
+        admob.initAd();
+      }
+    });
+
   });

@@ -1,4 +1,4 @@
-  <ion-view view-title="Home">
+  <ion-view view-title="Home" ng-init="Init()">
     <ion-content>
       HOME
       <ion-list>
@@ -7,11 +7,12 @@
           <i class="icon ion-chevron-right icon-accessory"></i>
         </ion-item>
       </ion-list>
-      <ion-list>
-        <ion-item class="item-remove-animate item-avatar item-icon-right" ng-class-even="'balanced'" ng-repeat="chat in constants.chats.collection" type="item-text-wrap" href="#/defensive/{{chat.id}}">
-          {{chat.name}}
-          <i class="icon ion-chevron-right icon-accessory"></i>
-        </ion-item>
-      </ion-list>
+      <!--<ion-list>-->
+        <!--<ion-item class="item-remove-animate item-avatar item-icon-right" ng-class-even="'balanced'" ng-repeat="chat in constants.chats.collection" type="item-text-wrap" href="#/defensive/{{chat.id}}">-->
+          <!--{{chat.name}}-->
+          <!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+        <!--</ion-item>-->
+      <!--</ion-list>-->
+      <button ng-click="admob.createBannerAd()">create Ad</button>
     </ion-content>
   </ion-view>
